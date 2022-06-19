@@ -175,6 +175,12 @@ width: 45.5%;
      font-weight: 400px;
      border-color: transparent;
     font-weight: 400px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.log_reg_text_edit{
+   
 }
 
 #query{
@@ -478,9 +484,10 @@ color: #666666;
 
 #mycart{
     display: flex;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
    margin-top: -36px;
    cursor: pointer;
+   
     }
 
     #mycart:hover{
@@ -584,6 +591,7 @@ display: flex;
    .alllogo{
    margin: auto;
    display: inline-block ;
+   color: #ebebeb;
      }
 
      #logo_horizontally>:nth-child(1){
@@ -597,6 +605,54 @@ display: flex;
   margin-left: 16.5%;
 }
 
+
+#gridbox{
+    margin: auto;
+    border: 1px solid;
+    width:67% ;
+       display: grid;
+    grid-template-columns: repeat(6,16.6%);
+    grid-template-rows: repeat(2,30px);
+   gap: 10px 10px;
+}
+
+#gridbox>div{
+    border: 1px solid red;
+    text-align: center;
+    margin-right: 50px;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  
+}
+
+
+#login_register{
+    margin-left: -2%;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#login_register{
+
+}
+
+.addtocart_button{
+border-radius: 2.5px;
+border-color: transparent;
+margin-top: -56px;
+padding: 4px;
+width: 130px;
+}
+
+.addtocart_button_secondline{
+    border-radius: 2.5px;
+border-color: transparent;
+margin-top: -56px;
+padding: 4px;
+width: 130px;
+}
 </style>
 
 </head>
@@ -620,7 +676,7 @@ display: flex;
     <a href="https://www.beautybebo.com/">
         <img id="bebo_logo" src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="">
             </a>
-<div id="select_search">
+<div id="select_search" >
             <div id="selectbox_div">
                 <select name="" id="select" >
                 <option  value="All Categories">All Categories</option>
@@ -677,6 +733,11 @@ display: flex;
 
         <div  id="MY_Account_div">
             <button id="MY_Account_button" >My Account</button>
+            <select name="" id="login_register" >
+                <option value=""></option>
+            <option class="log_reg_text_edit" value="">Login</option>
+            <option class="log_reg_text_edit" value="Register">Register</option>
+            </select>
         </div>
 
            
@@ -688,78 +749,181 @@ display: flex;
 
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color:#dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;" class="product_head_select;  ">
     <option style="background-color: white;color: black;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>FACE</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Blush</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Bronzer</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>CC Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Contour</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Concealer</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Compact & Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Face Primer</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Foundation</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Highlighters</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Loose Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Mkeup Kits</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Compact & Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Face Primer</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Foundation</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Highlighters</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Loose Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Mkeup Kits</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Compact & Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Face Primer</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Foundation</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Highlighters</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Loose Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Mkeup Kits</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Compact & Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Face Primer</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Foundation</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Highlighters</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Loose Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Mkeup Kits</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
    
 </select></div>
 
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>SKIN</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dark Circle</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Contour Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Masks</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dark Circle</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Contour Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Masks</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dark Circle</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Contour Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Masks</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dark Circle</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Contour Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Masks</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dark Circle</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Contour Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Masks</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
 </select></div>
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>HAIR</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Color Protection</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dandruf</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dry Shampoo</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Gels & Waxes</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Hair Spray</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Color Protection</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dandruf</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dry Shampoo</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Gels & Waxes</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Hair Spray</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Color Protection</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dandruf</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dry Shampoo</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Gels & Waxes</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Hair Spray</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Color Protection</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dandruf</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Dry Shampoo</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Gels & Waxes</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Hair Spray</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
 </select></div>
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>PERSONAL CARE</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Body Cleansers</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Body Message Oil</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Essential Oils</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Bath Brushes</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Loofahs</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Shower Caps</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Sponges</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Body Soaps</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Shower Gel</b> </option>
 </select></div>
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>MOM & BABY CARE</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Bath Time</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Diapers</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Lotions & Creams</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Oils</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Powder</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Shampoo</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Soaps</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Lotion & Creams</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Personal Care</b> </option>
 </select></div>
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>FRAGRANCE</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-</select></div>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Perfumes</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Deodorants roll ons</b> </option>
+    </select></div>
 <div id="ayurveda" class="tryhover_in_product_fhead" style="margin-bottom:22%;"><select class="headstyle" style="background-color:#dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>AYURVEDA</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
-    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>NATURAL SKIN CARE</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Body Lotion</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Cleansers</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Cream</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Eye Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Face Wash</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Gel</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Lip Care</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Maskk</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Pack</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Scrub</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Sun Protection</b> </option>
+    <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>Hair oils</b> </option>
 </select></div>
 <div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
-    <option style="background-color: white;color: black;" value="MACKUP"><b>BRANDS</b> </option>
+    <option style="background-color: white;color: black;" value="MACKUP"><b>BRANDS  </b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
@@ -767,11 +931,16 @@ display: flex;
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
+
+    <h2>Top Brands</h2>
+    <hr>
+
+    
 </select></div>
 
 <div id="mycart" style="align-items: center;justify-content: space-between;" .tryhover_in_product_head:hover>
 <i class="fa-solid fa-bag-shopping"></i>
-<p>MY CART</p>
+<p>MY CART </p>
 </div>
 
 
@@ -800,28 +969,29 @@ display: flex;
             <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
             <p>></p>
         </div>
+       
         <div>
-            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
+            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/skin-small.png" alt="">Skin</a>
             <p>></p>
         </div>
         <div>
-            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
+            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/hair-small.png" alt="">Hair</a>
             <p>></p>
         </div>
         <div>
-            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
+            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/personal-care-small.png" alt="">Personal Care</a>
             <p>></p>
         </div>
         <div>
-            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
+            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/mom-baby-care-small.png" alt="">Mom & Baby Care</a>
             <p>></p>
         </div>
         <div>
-            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
+            <a href=""><img src="https://www.beautybebo.com/pub/media/fragrance.png" alt="">Fragrance</a>
             <p>></p>
         </div>
         <div>
-            <a href=""><img src="https://www.beautybebo.com/pub/media/wysiwyg/menu-icons/makeup-small.png" alt="">MakeUp</a>
+            <a href=""><img src="https://www.beautybebo.com/pub/media/ayurveda.png" alt="">Ayurveda</a>
             <p>></p>
         </div>
     </div>
@@ -926,52 +1096,53 @@ display: flex;
 
 
 <div class="Total_product4">
+ 
 
-   <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/i/m/image1_600x.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">Lotus Herbals Whiteglow Vitamin .C</p>
     <!-- <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i> -->
-    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-    <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 428.00</h1>
+    <button class="addtocart_button"> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
 <div><i class="fa-light fa-square-heart"></i></div>
 </div>
 
-<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/a/a/aae1c478906105612136-2.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Hyaluronic Acid FaceSerum</p>
     <!-- <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i> -->
-    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-    <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 630.00</h1>
+    <button class="addtocart_button"> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
 <div><i class="fa-light fa-square-heart"></i></div>
 </div>
 
-<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/a/c/activated_charcoal_face_mask2.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Activated Charcoal Face Mask </p>
     <!-- <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i> -->
-    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-    <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 435.00</h1>
+    <button class="addtocart_button"> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
 <div><i class="fa-light fa-square-heart"></i></div>
 </div>
 
-<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8904311901495_1_1_.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science AM2PM Sunscreen SPF50 Lotion</p>
     <!-- <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i>
     <i class="fa-solid fa-star-sharp"></i> -->
     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-    <button style="padding-top: -40px;" > <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <button class="addtocart_button" style="padding-top: -40px;" > <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
 <div><i class="fa-light fa-square-heart"></i></div>
 </div>
 
@@ -1002,77 +1173,85 @@ display: flex;
 </div>
 
 
-<div id="logo_horizontally">
+<div id="logo_horizontally"  >
 
-    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png" alt="">Makeup</div>
-    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/skin.png" alt="">Skin</div>
-    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/hair.png" alt="">Hair</div>
-    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png" alt="">Personal Care</div>
-    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png" alt="">Mom & Baby Care</div>
+    <div ><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png" alt=""></div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/skin.png" alt=""></div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/hair.png" alt=""></div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png" alt=""></div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png" alt=""></div>
     <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/eye_1.png" alt="">Eye</div>
-    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png" alt="">Fragrance</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png" alt=""></div>
 
     
 </div>
  
 
 
-<div style="margin-bottom:1% ;" class="Total_product4" >
+<div class="Total_product4">
+ 
 
-    <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
-     <!-- <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i> -->
-     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-     <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
- <div><i class="fa-light fa-square-heart"></i></div>
- </div>
- 
- <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
-     <!-- <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i> -->
-     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-     <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
- <div><i class="fa-light fa-square-heart"></i></div>
- </div>
- 
- <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
-     <!-- <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i> -->
-     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-     <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
- <div><i class="fa-light fa-square-heart"></i></div>
- </div>
- 
- <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
-     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
-     <!-- <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i>
-     <i class="fa-solid fa-star-sharp"></i> -->
-     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
-     <button style="padding-top: -40px;" > <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
- <div><i class="fa-light fa-square-heart"></i></div>
- </div>
- 
- 
-</div>
+    <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg" alt="">
+        <p style="width: 220px; padding-left: 40px; ">Miss Claire Eyelash Glue-Clear Tone</p>
+        <!-- <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i> -->
+        <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 322.00</h1>
+        <button class="addtocart_button_secondline"> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <div><i class="fa-light fa-square-heart"></i></div>
+    </div>
+    
+    <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/b/5b990e16902395773146_3.jpg" alt="">
+        <p style="width: 220px; padding-left: 40px; ">Maybelline New York Fit Me Primer - Dewy+Smooth</p>
+        <!-- <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i> -->
+        <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 521.00</h1>
+        <button class="addtocart_button_secondline"> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <div><i class="fa-light fa-square-heart"></i></div>
+    </div>
+    
+    <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/9/6902395735908_0.jpg" alt="">
+        <p style="width: 220px; padding-left: 40px; ">L'Oreal Paris Infallible Full Wear Concealer</p>
+        <!-- <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i> -->
+        <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 735.00</h1>
+        <button class="addtocart_button_secondline"> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <div><i class="fa-light fa-square-heart"></i></div>
+    </div>
+    
+    <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/1/51c18ra5qzs._sl1500_.jpg" alt="">
+        <p style="width: 220px; padding-left: 40px; ">Faces Canada Ultimate Pro Matte Play Eyelinner</p>
+        <!-- <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i>
+        <i class="fa-solid fa-star-sharp"></i> -->
+        <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 604.00</h1>
+        <button class="addtocart_button_secondline" style="padding-top: -40px;" > <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+    <div><i class="fa-light fa-square-heart"></i></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
 
 
  <div id="discount_banner">
-    <img style="width:100%;" src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" alt="">
+    <img style="width:100%;margin-top: 1%;" src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" alt="">
  </div>
  
  
