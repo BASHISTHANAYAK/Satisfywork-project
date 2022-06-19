@@ -189,7 +189,7 @@ width: 45.5%;
     /* display: flex; */
     margin-top: -0.6%;
     display: grid;
-    grid-template-columns: repeat(8,8%);
+    grid-template-columns: repeat(9,8%);
     flex-direction: row;
     grid-column-gap: 0.7%;
         justify-content: center;
@@ -202,7 +202,7 @@ width: 45.5%;
 #products>div{
     /* border: 1px solid black;  */
     background-color: #dd0285;
-    /* height: 100%; */
+    height: 20%;
     padding-top: 12%;
     padding-bottom: 12%;
        
@@ -239,10 +239,11 @@ width: 45.5%;
     height: 364px; */
     /* display: flex;
     justify-content: space-evenly; */
+   
    }
 
    #product > div{
-    border: 1px solid red;
+    border: 1px solid transparent;
     height: 80%;
     width: 23%;
    
@@ -264,16 +265,17 @@ background-color: #c60277;
 
    #products>.tryhover_in_product_head{
     cursor: pointer;
+    margin-bottom: 22%;
    }
 
    .headstyle:hover{
 cursor: pointer;
    }
-
+  
 
 
    #below_head{
-    border: 1px solid blue;
+    border: 1px solid #ebebeb;
     height: 453.23px;
     width: 1268px;
     margin: auto;
@@ -282,9 +284,11 @@ cursor: pointer;
    }
 
    #ALL_CATEGORIES{
-    border: 1px solid green;
+  border: 1px solid transparent;
     width: 317px ;
     height: 316.5px ;
+    margin-top: 1%;
+    margin-left: 1%;
    }
 
    #cata > div >  a:hover{
@@ -294,7 +298,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid;
+    border: 1px solid transparent;
     margin-top: -4%;
     
 }
@@ -317,25 +321,14 @@ color: #666666;
 
 #ALLCATEGORIES2{
     font-size: 10px;
-    margin-right: 160px;
+    margin-right: 140px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* gap colour between images */
 #imageslide{
   /* background-color: red; */
-  border: 1px solid red;
+  border: 1px solid transparent;
   
 }
 
@@ -393,31 +386,7 @@ color: #666666;
         height: 450px;
       }
       
-      /*css for manual slide navigation*/
-      
-      /* .navigation-manual{
-        position: absolute;
-        width: 800px;
-        margin-top: -40px;
-        display: flex;
-        justify-content: center;
-      } */
-      
-      /* .manual-btn{
-        border: 2px solid #40D3DC;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-      } */
-      
-      /* .manual-btn:not(:last-child){
-        margin-right: 40px;
-      }
-       */
-      /* .manual-btn:hover{
-        background: #40D3DC;
-      } */
+    
       
       #radio1:checked ~ .first{
         margin-left: 1;
@@ -452,10 +421,11 @@ color: #666666;
       
       /* radio border size */
       .navigation-auto div{
-        border: 2px solid black;
+        border: 1px solid black;
         padding: 5px;
         border-radius: 10px;
         transition: 1s;
+        
       }
       
     /* control  gap between all radio */
@@ -506,7 +476,126 @@ color: #666666;
 }
 
 
+#mycart{
+    display: flex;
+    border: 1px solid transparent;
+   margin-top: -36px;
+   cursor: pointer;
+    }
 
+    #mycart:hover{
+       
+        background-color: #c60277;
+    }
+
+    #mycart>i{
+        margin-left: 9%;
+        color: white;
+    }
+
+ #mycart>p{
+   display: block;
+   margin-right: 30px;
+   font-weight: 700;
+   color: white;
+   }
+
+#ayurveda:hover{
+background-color: #c60277;
+}
+
+
+.Total_product4{
+border: 1px solid #ebebeb;
+width:67% ;
+height: 448.94px;
+margin-left: 16.6%;
+display: flex;
+
+}
+
+.Total_product4>div{
+    border: 1px solid #ebebeb;
+     width: 25%;
+    height: 100%;
+ text-align: center;
+ font-size: 15px;
+margin: auto;
+     }
+
+     .Total_product4>div>h1,i{
+        color:#dd0285;
+     }
+
+     .Total_product4>div>button{
+        background-color:#dd0285 ;
+        color: #f0f0f0;
+     }
+
+     .Total_product4>div>button>i{
+        color: white;
+        
+            }
+
+            #Total_product4>div>button{
+                width: 40%;
+                padding: 1%;
+                margin-bottom: 20px;
+                border-color: transparent;
+                
+            }
+
+#total2img_head{
+border: 1px solid transparent;
+width: 70%;
+height:281px ;
+display: flex;
+margin: auto;
+margin-top: 1%;
+justify-content: space-between;
+}
+
+#total2img_head>div{
+    /* border: 1px solid green; */
+   
+    width: 50%;
+   margin: auto;
+   margin-left: 2.5%;
+}
+
+   #logo_horizontally{
+border: 1px solid transparent;
+width: 67%;
+height: 85px;
+margin: auto;
+margin-top: 1.5%;
+display: flex;
+   }
+
+
+   #logo_horizontally>div{
+    display: flex;
+    border: 1px solid #ebebeb;
+    height: 100%;
+    width: 14.2%;
+  
+   }
+      
+   .alllogo{
+   margin: auto;
+   display: inline-block ;
+     }
+
+     #logo_horizontally>:nth-child(1){
+       /* background-color: #dd0285; */
+       
+     }
+
+#discount_banner{
+    border: 1px solid transparent;
+    width: 67%;
+  margin-left: 16.5%;
+}
 
 </style>
 
@@ -597,7 +686,7 @@ color: #666666;
 
 <div id="products">
 
-<div class="tryhover_in_product_head"><select class="headstyle" style="background-color: #c60277;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;" class="product_head_select;  ">
+<div class="tryhover_in_product_head"><select class="headstyle" style="background-color:#dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;" class="product_head_select;  ">
     <option style="background-color: white;color: black;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
@@ -659,7 +748,7 @@ color: #666666;
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
 </select></div>
-<div class="tryhover_in_product_fhead"><select class="headstyle" style="background-color:#dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
+<div id="ayurveda" class="tryhover_in_product_fhead" style="margin-bottom:22%;"><select class="headstyle" style="background-color:#dd0285;color:#ffff;line-height: 25px;size: 14px;font-weight: 700;"class="product_head_select">
     <option style="background-color: white;color: black;" value="MACKUP"><b>AYURVEDA</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
@@ -680,7 +769,10 @@ color: #666666;
     <option style="background-color: white;color: #99a6c4;" value="MACKUP"><b>MACKUP</b> </option>
 </select></div>
 
-
+<div id="mycart" style="align-items: center;justify-content: space-between;" .tryhover_in_product_head:hover>
+<i class="fa-solid fa-bag-shopping"></i>
+<p>MY CART</p>
+</div>
 
 
 </div>
@@ -831,36 +923,162 @@ color: #666666;
 
 <hr style="margin-top:0.7% ;">
 
-<!-- <P id="NewARRIVAL"> <a href="https://www.beautybebo.com/"></a>
-     NEW ARRIVALS!</P>
-
-     <hr style="margin-top: -1%;"> -->
 
 
+<div class="Total_product4">
 
+   <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+    <!-- <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i> -->
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+    <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+<div><i class="fa-light fa-square-heart"></i></div>
+</div>
 
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+    <!-- <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i> -->
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+    <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+<div><i class="fa-light fa-square-heart"></i></div>
+</div>
 
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+    <!-- <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i> -->
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+    <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+<div><i class="fa-light fa-square-heart"></i></div>
+</div>
 
-
-     <!-- <div id="product">  -->
-
-
-<!-- 
- <div>
-    <img id="product_img1" src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/f/efbafe2nywow000083__1_.jpg" alt="">
-    <p id="product1_text">WOW Skin Science 10 In 1 Miracle Hair Oil</p>
-   
+<div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+    <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+    <!-- <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i>
+    <i class="fa-solid fa-star-sharp"></i> -->
+    <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+    <button style="padding-top: -40px;" > <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+<div><i class="fa-light fa-square-heart"></i></div>
 </div>
 
 
 
 
-     </div>
 
-     
-     <i class="fa-solid fa-star"></i>
-     <i class="fa-solid fa-star"></i> -->
 
+
+
+
+</div>
+
+<!-- 
+<div id="only2img">
+<div></div>
+<div></div>
+</div> -->
+<div id="total2img_head">
+    <div>
+    <img  class="only2img" src="https://www.beautybebo.com/pub/media/mega-menu/lotus.jpg" alt="">
+    </div>
+
+        <div>
+            <img  class="only2img" src="https://www.beautybebo.com/pub/media/mega-menu/beeone.jpg" alt="">
+        </div>
+
+</div>
+
+
+<div id="logo_horizontally">
+
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png" alt="">Makeup</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/skin.png" alt="">Skin</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/hair.png" alt="">Hair</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/personal-care.png" alt="">Personal Care</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/mom-baby-care.png" alt="">Mom & Baby Care</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/eye_1.png" alt="">Eye</div>
+    <div><img class="alllogo" src="https://www.beautybebo.com/pub/media/catalog/category/fragrance_3.png" alt="">Fragrance</div>
+
+    
+</div>
+ 
+
+
+<div style="margin-bottom:1% ;" class="Total_product4" >
+
+    <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+     <!-- <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i> -->
+     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+     <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+ <div><i class="fa-light fa-square-heart"></i></div>
+ </div>
+ 
+ <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+     <!-- <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i> -->
+     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+     <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+ <div><i class="fa-light fa-square-heart"></i></div>
+ </div>
+ 
+ <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+     <!-- <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i> -->
+     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+     <button> <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+ <div><i class="fa-light fa-square-heart"></i></div>
+ </div>
+ 
+ <div><img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/c/cca52498904311901341_1.jpg" alt="">
+     <p style="width: 220px; padding-left: 40px; ">WOW Skin Science Moroccan Rose Otto Foming Body Wash</p>
+     <!-- <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i>
+     <i class="fa-solid fa-star-sharp"></i> -->
+     <h1> <i class="fa-solid fa-indian-rupee-sign"></i> 399.00</h1>
+     <button style="padding-top: -40px;" > <i class="fa-light fa-bag-shopping"></i><b>Add To Cart</b> </button>
+ <div><i class="fa-light fa-square-heart"></i></div>
+ </div>
+ 
+ 
+</div>
+
+
+ <div id="discount_banner">
+    <img style="width:100%;" src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" alt="">
+ </div>
+ 
+ 
+ 
+ 
+ 
  
 
 </body>
